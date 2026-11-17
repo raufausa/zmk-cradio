@@ -76,16 +76,8 @@
         };
 
         NextTab {
-            bindings = <&kp LG(LS(LBKT))>;
+            bindings = <&kp LS(RIGHT_BRACKET)>;
             key-positions = <5 6>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <200>;
-            layers = <0>;
-        };
-
-        esc {
-            bindings = <&kp LG(ESCAPE)>;
-            key-positions = <8 9>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <0>;
@@ -186,6 +178,70 @@
             require-prior-idle-ms = <200>;
             layers = <0>;
         };
+
+        newTab {
+            bindings = <&kp LG(T)>;
+            key-positions = <15 16>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        cycleWindows {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <18 19>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <8 9>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        shortcat {
+            bindings = <&kp LG(LA(PIPE))>;
+            key-positions = <28 29>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        redo {
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <23 24>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        minimize {
+            bindings = <&kp LG(H)>;
+            key-positions = <1 2>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        zoomIn {
+            bindings = <&kp LG(EQUAL)>;
+            key-positions = <23 24>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        zoomOut {
+            bindings = <&kp LG(MINUS)>;
+            key-positions = <25 26>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -193,10 +249,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W                &kp E            &kp R            &kp T              &kp Y      &kp U             &kp I             &kp O                 &kp P
-&kp A  &HML S LEFT_CONTROL  &HML LEFT_ALT D  &HML LEFT_GUI F  &kp G              &kp H      &HMR RIGHT_GUI J  &HMR RIGHT_ALT K  &HMR RIGHT_CONTROL L  &kp SQT
-&kp Z  &kp X                &kp C            &kp V            &kp B              &kp N      &kp M             &kp COMMA         &kp DOT               &HMR GLOBE FSLH
-                                             &lt 1 TAB        &skq LEFT_SHIFT    &kp SPACE  &lt 2 BSPC
+&kp Q         &kp W                &kp E            &kp R            &kp T              &kp Y      &kp U             &kp I             &kp O                 &kp P
+&kp A         &HML LEFT_CONTROL S  &HML LEFT_ALT D  &HML LEFT_GUI F  &kp G              &kp H      &HMR RIGHT_GUI J  &HMR RIGHT_ALT K  &HMR RIGHT_CONTROL L  &kp SQT
+&HML GLOBE Z  &kp X                &kp C            &kp V            &kp B              &kp N      &kp M             &kp COMMA         &kp DOT               &HMR GLOBE FSLH
+                                                    &lt 1 ENTER      &skq LEFT_SHIFT    &kp SPACE  &lt 2 BSPC
             >;
         };
 

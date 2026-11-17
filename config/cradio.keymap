@@ -76,7 +76,7 @@
         };
 
         NextTab {
-            bindings = <&kp LG(RIGHT_BRACKET)>;
+            bindings = <&kp LG(LS(RIGHT_BRACKET))>;
             key-positions = <5 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -227,17 +227,17 @@
             layers = <0>;
         };
 
-        zoomIn {
-            bindings = <&kp LG(EQUAL)>;
-            key-positions = <23 24>;
+        zoomOut {
+            bindings = <&kp LG(MINUS)>;
+            key-positions = <25 26>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <0>;
         };
 
-        zoomOut {
-            bindings = <&kp LG(MINUS)>;
-            key-positions = <25 26>;
+        ZoomIn {
+            bindings = <&kp LG(EQUAL)>;
+            key-positions = <23 24>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <0>;
